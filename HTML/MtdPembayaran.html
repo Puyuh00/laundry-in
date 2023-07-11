@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Metode Pembayaran Kasir Laundry</title>
+</head>
+<body>
+  <h1>Metode Pembayaran</h1>
+
+  <form action="/proses-pembayaran" method="post">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required><br><br>
+
+    <label for="metode">Metode Pembayaran:</label>
+    <select id="metode" name="metode" required>
+      <option value="">Pilih Metode Pembayaran</option>
+      <option value="tunai">Tunai
+        <div class="card card-primary card-outline">
+          <div class="card-header">
+            <h5 class="card-title m-0">Cash</h5>
+          </div>
+          <div class="card-body text-center">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.hZpTrssLEnoicAGq8Z3vNQHbCD&pid=Api&P=0&h=180" style="width: 10%;" alt="cash">
+            <br>
+            <a href="#" class="btn btn-primary">Pilih</a> 
+          </div>             
+        </div>
+      </option>
+      <option value="kartu-kredit">Kartu Kredit</option>
+      <option value="transfer">Transfer Bank</option>
+    </select><br><br>
+
+    <input type="submit" value="Bayar">
+  </form>
+
+</body>
+</html>

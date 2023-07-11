@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INVOICE LAUNDRY-IN</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    .invoice-header {
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .invoice-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .invoice-details {
+      margin-top: 20px;
+    }
+
+    .invoice-details .row {
+      margin-bottom: 10px;
+    }
+
+    .invoice-details .col {
+      padding: 5px;
+    }
+
+    .invoice-footer {
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: right;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="invoice-header">
+          <h2 class="invoice-title">Invoice Transaksi LAUNDRY-IN</h2>
+          <p>Nomor Invoice: 001</p>
+        </div>
+        <div class="invoice-details">
+            <div class="row">
+                <div class="col">Tanggal:</div>
+                <div class="col">15/05/2023</div>
+              </div>
+          <div class="row">
+            <div class="col">Nama Pelanggan:</div>
+            <div class="col">Yuswo Saroso</div>
+          </div>
+          <div class="row">
+            <div class="col">Layanan:</div>
+            <div class="col">Cuci Selimut</div>
+          </div>
+          <div class="row">
+            <div class="col">Berat:</div>
+            <div class="col">3 kg</div>
+          </div>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Berat</th>
+              <th scope="col">Harga /kg</th>
+              <th scope="col">Total Pembayaran</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">3 kg</th>
+              <td>Rp. 6000</td>
+              <td>Rp. 18.000</td>
+            </tr>
+ 
+          </tbody>
+        </table>
+        <div class="invoice-footer">
+          <p>Total: Rp. 18.000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

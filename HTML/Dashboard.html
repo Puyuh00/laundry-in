@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="Assets/FontAwesome/font-awesome.min.css">
+  <link rel="stylesheet" href="Assets/Ionicons/ionicons.min.css">
+  <link rel="stylesheet" href="CSS/material-design-iconic-font.min.css" />
+  <link rel="stylesheet" href="CSS/animate.css" />
+  <link rel="stylesheet" href="CSS/waves-effect.css" />
+  <link rel="stylesheet" href="Assets/Tagsinput/jquery.tagsinput.css">
+  <link rel="stylesheet" href="Assets/Toggles/toggles.css">
+  <link rel="stylesheet" href="Assets/Timepicker/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="Assets/Timepicker/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="Assets/Colorpicker/colorpicker.css">
+  <link rel="stylesheet" type="text/css" href="Assets/Jquery-multi-select/multi-select.css">
+  <link rel="stylesheet" type="text/css" href="Assets/Select2/select2.css">
+  <link rel="stylesheet" type="text/css" href="CSS/helper.css">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="Assets/DataTables/jquery.dataTables.min.css">
+  <script src="JS/modernizr.min.js"></script>
+</head>
+<body class="fixed-left">
+  <!-- Begin page -->
+  <div id="wrapper">
+
+    <!-- Top Bar Start -->
+    <div class="topbar">
+      <!-- LOGO -->
+      <div class="topbar-left">
+        <div class="text-center">
+          <!-- <img src="Assets/Logo/Logo.jpg" alt="Logo Laundry-In" class=" img-circle" style="width: 20%;"> -->
+          <a href="#" class="logo"><span>LAUNDRY-IN</span></a>
+        </div>
+      </div>
+      <!-- Button mobile view to collapse sidebar menu -->
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="">
+            <div class="pull-left">
+              <button class="button-menu-mobile open-left">
+                <i class="fa fa-bars"></i>
+              </button>
+              <span class="clearfix"></span>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right pull-right">
+              <li class="dropdown">
+                <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light">
+                  <i class='md-add-shopping-cart'></i> <span class='badge badge-xs badge-danger'>10</span> </a>
+
+              </li>
+              <li class="hidden-xs">
+                <a href="#" id="btn-fullscreen" class="waves-effect waves-light"><i class="md md-crop-free"></i></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true"><i
+                    class="ion-android-add-contact"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#"><i class="md md-face-unlock"></i> Edit Profil</a></li>
+                  <li><a href="#"><i class="md md-settings-power"></i> Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <!-- Top Bar End -->
+
+
+    <!-- ========== Left Sidebar Start ========== -->
+
+    <div class="left side-menu">
+      <div class="sidebar-inner slimscrollleft">
+        <div class="user-details">
+          <div class="pull-left">
+            <i class="ion-android-contact"></i>
+          </div>
+          <div class="user-info">
+            <div class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Laundry-In <span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="md md-face-unlock"></i> Edit Profil<div class="ripple-wrapper"></div></a></li>
+                <li><a href="#"><i class="md md-settings-power"></i> Logout</a></li>
+              </ul>
+            </div>
+            <p class="text-muted m-0">Administrator</p>
+          </div>
+        </div>
+        <!--- Divider -->
+        <div id="sidebar-menu">
+          <ul>
+            <li>
+              <a href="#" class="waves-effect"><i class="md md-home"></i><span> Dashboard</a>
+            </li>
+
+            <li class="has_sub">
+              <a href="#" class="waves-effect"><i class="fa fa-user"></i> <span>Manajemen User</span> <span
+                  class="pull-right"><i class="md md-add"></i></span></a>
+              <ul class="list-unstyled">
+                <li><a href="#">Karyawan</a></li>
+                <li><a href="#">Administrator</a></li>
+              </ul>
+            </li>
+
+            <li><a href="?pb=mtd_pembayaran.php" class="waves-effect"><i class="fa fa-money"></i><span> Pembayaran</a></li>
+            <li><a href="#" class="waves-effect"><i class="md md-home"></i><span> Paket Laundry</a></li>
+            <li><a href="#" class="waves-effect"><i class="fa fa-user"></i><span> Customer</a></li>
+            <li> <a href="#"><i class="fa fa-money"></i><span>Tipe Pembayaran </span></a></li>
+            <li> <a href="#"><i class="fa fa-edit"></i><span>Identitas Aplikasi </span></a></li>
+            <li><a href="#"><i class="fa fa-book"></i><span>Laporan</span></a></li>
+
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="content-page">
+
+      <div class="content">
+        <div class="container">
+
+          <!DOCTYPE html
+            PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+          <html xmlns="http://www.w3.org/1999/xhtml">
+
+          <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title>.:: Aplikasi Kasir Laundry ::.</title>
+          </head>
+
+          <body>
+            <div class='row'>
+              <div class='col-sm-12'>
+                <h4 class='pull-left page-title'><strong> Selamat Datang di Web Aplikasi Kasir Laundry-In</strong></h4>
+                <ol class='breadcrumb pull-right'>
+                  <li><a href='#'>Beranda</a></li>
+                  <li class='active'>Dashboard</li>
+                </ol>
+              </div>
+            </div>
+            <!-- Start Widget -->
+            <!--Widget-4 -->
+            <div class='row'>
+              <div class='col-sm-6 col-lg-3'>
+                <div class='mini-stat clearfix bx-shadow bg-white'>
+                  <span class='mini-stat-icon bg-info'><i class='ion-android-contacts'></i></span>
+                  <div class='mini-stat-info text-right text-dark'><span class='counter text-dark'>50</span>
+                    Total Customer
+                  </div>
+                </div>
+              </div>
+              <div class='col-sm-6 col-lg-3'>
+                <div class='mini-stat clearfix bx-shadow bg-white'>
+                  <span class='mini-stat-icon bg-success'><i class='ion-android-contacts'></i></span>
+                  <div class='mini-stat-info text-right text-dark'><span class='counter text-dark'>41</span>
+                    Total Karyawan
+                  </div>
+                </div>
+              </div>
+              <div class='col-sm-6 col-lg-3'>
+                <div class='mini-stat clearfix bx-shadow bg-white'>
+                  <span class='mini-stat-icon bg-primary'><i class='ion-ios7-cart'></i></span>
+                  <div class='mini-stat-info text-right text-dark'><span class='counter text-dark'>102</span>
+                    New Order
+                  </div>
+                </div>
+              </div>
+              <div class='col-sm-6 col-lg-3'>
+                <div class='mini-stat clearfix bx-shadow bg-white'>
+                  <span class='mini-stat-icon bg-purple'><i class='ion-ios7-cart'></i></span>
+                  <div class='mini-stat-info text-right text-dark'> <span class='counter text-dark'>222</span>
+                    Total Order
+                  </div>
+                </div>
+              </div>
+            </div> <!-- End row-->
+            <div class='panel panel-border panel-primary'>
+              <div class='panel-heading'>
+                <h3 class='panel-title'><i class='fa fa-clock-o'></i> Order Terbaru</h3>
+              </div>
+              <div class='panel-body'>
+                <table id='datatable' class='table table-hover'>
+                  <thead>
+                    <tr>
+                      <th><i class='icon-terminal'></i> No</th>
+                      <th><i class='icon-signal'></i> Tgl. Transaksi</th>
+                      <th><i class='icon-signal'></i> Customer</th>
+                      <th><i class='icon-terminal'></i> Paket</th>
+                      <th><i class='icon-signal'></i> Pembayaran</th>
+                      <th><i class='icon-signal'></i> Status Order</th>
+                      <th><i class='icon-signal'></i> Total</th>
+                      <th><i class='icon-signal'></i> Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><b>1</b></td>
+
+                      <td><b>06/12/2023</b></td>
+                      <td><b>DEDY</b></td>
+                      <td><b>selimut</b></td>
+                      <td><b>Lunas</b></td>
+                      <td><b>Baru</b></td>
+                      <td><b>Rp. 45.000,-</b></td>
+                      <td><a class='btn btn-primary' href='#'><i class='icon-edit'></i>Detail</a></td>
+
+                    </tr>
+                    <tr>
+                      <td><b>2</b></td>
+
+                      <td><b>06/09/2023</b></td>
+                      <td><b>hello</b></td>
+                      <td><b>Karpet</b></td>
+                      <td><b>Belum Lunas</b></td>
+                      <td><b>Baru</b></td>
+                      <td><b>Rp. 40.000,-</b></td>
+                      <td><a class='btn btn-primary' href='#'><i class='icon-edit'></i>Detail</a></td>
+
+                    </tr>
+                    <tr>
+                      <td><b>3</b></td>
+
+                      <td><b>06/02/2023</b></td>
+                      <td><b>Nuriyana Hariyanti</b></td>
+                      <td><b>Karpet</b></td>
+                      <td><b>Lunas</b></td>
+                      <td><b>Baru</b></td>
+                      <td><b>Rp. 132.320,-</b></td>
+                      <td><a class='btn btn-primary' href='#'><i class='icon-edit'></i>Detail</a></td>
+
+                    </tr>
+                    <tr>
+                      <td><b>4</b></td>
+
+                      <td><b>06/01/2023</b></td>
+                      <td><b>Caca Nela</b></td>
+                      <td><b>selimut</b></td>
+                      <td><b>Lunas</b></td>
+                      <td><b>Baru</b></td>
+                      <td><b>Rp. 90.000,-</b></td>
+                      <td><a class='btn btn-primary' href='#'><i class='icon-edit'></i>Detail</a></td>
+
+                    </tr>
+                    <tr>
+                      <td><b>5</b></td>
+
+                      <td><b>05/30/2023</b></td>
+                      <td><b>Aji Prasetya</b></td>
+                      <td><b>cuci </b></td>
+                      <td><b>Belum Lunas</b></td>
+                      <td><b>Baru</b></td>
+                      <td><b>Rp. 25.000,-</b></td>
+                      <td><a class='btn btn-primary' href='#'><i class='icon-edit'></i>Detail</a></td>
+
+                    </tr>
+                    <tr>
+                      <td><b>6</b></td>
+
+                      <td><b>04/17/2023</b></td>
+                      <td><b>agus</b></td>
+                      <td><b>cuci lipat</b></td>
+                      <td><b>Belum Lunas</b></td>
+                      <td><b>Baru</b></td>
+                      <td><b>Rp. 25.000,-</b></td>
+                      <td><a class='btn btn-primary' href='#'><i class='icon-edit'></i>Detail</a></td>
+
+                    </tr>
+                    <tr>
+                      <td><b>7</b></td>
+
+                      <td><b>04/13/2023</b></td>
+                      <td><b>1</b></td>
+                      <td><b>kilat selimut</b></td>
+                      <td><b>Belum Lunas</b></td>
+                      <td><b>Baru</b></td>
+                      <td><b>Rp. 72.000,-</b></td>
+                      <td><a class='btn btn-primary' href='#'><i class='icon-edit'></i>Detail</a></td>
+
+                    </tr>
+                    <tr>
+                      <td><b>8</b></td>
+
+                      <td><b>04/05/2023</b></td>
+                      <td><b>1</b></td>
+                      <td><b>hemat</b></td>
+                      <td><b>Lunas</b></td>
+                      <td><b>Baru</b></td>
+                      <td><b>Rp. 90.000,-</b></td>
+                      <td><a class='btn btn-primary' href='#'><i class='icon-edit'></i>Detail</a></td>
+
+                    </tr>
+                    <tr>
+                      <td><b>9</b></td>
+
+                      <td><b>03/30/2023</b></td>
+                      <td><b>1</b></td>
+                      <td><b>cuci lipat</b></td>
+                      <td><b>Belum Lunas</b></td>
+                      <td><b>Baru</b></td>
+                      <td><b>Rp. 5.000,-</b></td>
+                      <td><a class='btn btn-primary' href='#'><i class='icon-edit'></i>Detail</a></td>
+
+                    </tr>
+                    <tr>
+                      <td><b>10</b></td>
+
+                      <td><b>03/29/2023</b></td>
+                      <td><b>Guesthouse</b></td>
+                      <td><b>cuci lipat</b></td>
+                      <td><b>Belum Lunas</b></td>
+                      <td><b>Baru</b></td>
+                      <td><b>Rp. 40.000,-</b></td>
+                      <td><a class='btn btn-primary' href='#'><i class='icon-edit'></i>Detail</a></td>
+
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- /.box-body -->
+            </div><!-- /.box -->
+          </body>
+
+          </html>
+        </div>
+
+      </div>
+
+      <footer class="footer text-left">
+        <strong>Copyright &copy;2023 <a href="#">Laundry-In</a>.</strong> All rights reserved.
+      </footer>
+
+    </div>
+  </div>
+
+  <script>
+    var resizefunc = [];
+  </script>
+
+<script src="JS/jquery.min.js"></script>
+<script src="JS/bootstrap.min.js"></script>
+<script src="JS/waves.js"></script>
+<script src="JS/wow.min.js"></script>
+<script src="JS/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="JS/jquery.scrollTo.min.js"></script>
+<script src="Assets/DetectMobile/detect.js"></script>
+<script src="Assets/Fastclick/fastclick.js"></script>
+<script src="Assets/Jquery-slimscroll/jquery.slimscroll.js"></script>
+<script src="Assets/Jquery-blockUI/jquery.blockUI.js"></script>
+<script src="JS/jquery.app.js"></script>
+<script src="Assets/Tagsinput/jquery.tagsinput.min.js"></script>
+<script src="Assets/Toggles/toggles.min.js"></script>
+<script src="Assets/Timepicker/bootstrap-timepicker.min.js"></script>
+<script src="Assets/Timepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+<script src="Assets/Colorpicker/bootstrap-colorpicker.js" type="text/javascript"></script>
+<script src="Assets/Jquery-multi-select/jquery.multi-select.js" type="text/javascript"></script>
+<script src="Assets/Jquery-multi-select/jquery.quicksearch.js" type="text/javascript"></script>
+<script src="Assets/Inputmask/bootstrap-inputmask.min.js" type="text/javascript"></script>
+<script src="Assets/Spinner/spinner.js" type="text/javascript"></script>
+<script src="Assets/Select2/select2.min.js" type="text/javascript"></script>
+<script src="Assets/DataTables/jquery.dataTables.min.js"></script>
+<script src="Assets/DataTables/dataTables.bootstrap.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#datatable').dataTable();
+    });
+
+    // Date Picker
+    jQuery('#datepicker').datepicker();
+    jQuery('#datepicker-inline').datepicker();
+    jQuery('#datepicker-multiple1').datepicker();
+    jQuery('#datepicker-multiple2').datepicker();
+    jQuery('#datepicker-multiple').datepicker({
+      numberOfMonths: 5,
+      showButtonPanel: true
+    });
+    // Select2
+    jQuery(".select2").select2({
+      width: '100%'
+    });
+  </script>
+
+
+</body>
+</html>
